@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_degree" for="node" attr.name="degree" attr.type="double"/>
+  <key id="v_clustering_coefficient" for="node" attr.name="clustering_coefficient" attr.type="double"/>
+  <key id="v_chi_degree" for="node" attr.name="chi_degree" attr.type="double"/>
+  <key id="v_kcore" for="node" attr.name="kcore" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_id">n0</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n1">
+      <data key="v_id">n1</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n2">
+      <data key="v_id">n2</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n3">
+      <data key="v_id">n3</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n4">
+      <data key="v_id">n4</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n5">
+      <data key="v_id">n5</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n6">
+      <data key="v_id">n6</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n7">
+      <data key="v_id">n7</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n8">
+      <data key="v_id">n8</data>
+      <data key="v_degree">0</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.263157894736842</data>
+      <data key="v_kcore">0</data>
+    </node>
+    <node id="n9">
+      <data key="v_id">n9</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n10">
+      <data key="v_id">n10</data>
+      <data key="v_degree">0</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.263157894736842</data>
+      <data key="v_kcore">0</data>
+    </node>
+    <node id="n11">
+      <data key="v_id">n11</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n12">
+      <data key="v_id">n12</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n13">
+      <data key="v_id">n13</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n14">
+      <data key="v_id">n14</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n15">
+      <data key="v_id">n15</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n16">
+      <data key="v_id">n16</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n17">
+      <data key="v_id">n17</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n18">
+      <data key="v_id">n18</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.666666666666667</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n19">
+      <data key="v_id">n19</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n20">
+      <data key="v_id">n20</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n21">
+      <data key="v_id">n21</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n22">
+      <data key="v_id">n22</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n23">
+      <data key="v_id">n23</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.19047619047619</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n24">
+      <data key="v_id">n24</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n25">
+      <data key="v_id">n25</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n26">
+      <data key="v_id">n26</data>
+      <data key="v_degree">0</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.263157894736842</data>
+      <data key="v_kcore">0</data>
+    </node>
+    <node id="n27">
+      <data key="v_id">n27</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n28">
+      <data key="v_id">n28</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n29">
+      <data key="v_id">n29</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n30">
+      <data key="v_id">n30</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n31">
+      <data key="v_id">n31</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n32">
+      <data key="v_id">n32</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n33">
+      <data key="v_id">n33</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n34">
+      <data key="v_id">n34</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n35">
+      <data key="v_id">n35</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n36">
+      <data key="v_id">n36</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n37">
+      <data key="v_id">n37</data>
+      <data key="v_degree">0.315789473684211</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n38">
+      <data key="v_id">n38</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n39">
+      <data key="v_id">n39</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n40">
+      <data key="v_id">n40</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">1</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n41">
+      <data key="v_id">n41</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n42">
+      <data key="v_id">n42</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.0476190476190476</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n43">
+      <data key="v_id">n43</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.333333333333333</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n44">
+      <data key="v_id">n44</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n45">
+      <data key="v_id">n45</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n46">
+      <data key="v_id">n46</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n47">
+      <data key="v_id">n47</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.1</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n48">
+      <data key="v_id">n48</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n49">
+      <data key="v_id">n49</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n50">
+      <data key="v_id">n50</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n51">
+      <data key="v_id">n51</data>
+      <data key="v_degree">0.315789473684211</data>
+      <data key="v_clustering_coefficient">0.0666666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n52">
+      <data key="v_id">n52</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n53">
+      <data key="v_id">n53</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.1</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n54">
+      <data key="v_id">n54</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n55">
+      <data key="v_id">n55</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n56">
+      <data key="v_id">n56</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n57">
+      <data key="v_id">n57</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n58">
+      <data key="v_id">n58</data>
+      <data key="v_degree">0.0526315789473684</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.25</data>
+    </node>
+    <node id="n59">
+      <data key="v_id">n59</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n60">
+      <data key="v_id">n60</data>
+      <data key="v_degree">0.684210526315789</data>
+      <data key="v_clustering_coefficient">0.0512820512820513</data>
+      <data key="v_chi_degree">0.673684210526316</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n61">
+      <data key="v_id">n61</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n62">
+      <data key="v_id">n62</data>
+      <data key="v_degree">0.421052631578947</data>
+      <data key="v_clustering_coefficient">0.321428571428571</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n63">
+      <data key="v_id">n63</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n64">
+      <data key="v_id">n64</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.0952380952380952</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n65">
+      <data key="v_id">n65</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n66">
+      <data key="v_id">n66</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n67">
+      <data key="v_id">n67</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n68">
+      <data key="v_id">n68</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n69">
+      <data key="v_id">n69</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n70">
+      <data key="v_id">n70</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n71">
+      <data key="v_id">n71</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.0476190476190476</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n72">
+      <data key="v_id">n72</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n73">
+      <data key="v_id">n73</data>
+      <data key="v_degree">0.105263157894737</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.5</data>
+    </node>
+    <node id="n74">
+      <data key="v_id">n74</data>
+      <data key="v_degree">0.210526315789474</data>
+      <data key="v_clustering_coefficient">0.166666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n75">
+      <data key="v_id">n75</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n76">
+      <data key="v_id">n76</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.0277777777777778</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n77">
+      <data key="v_id">n77</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.138888888888889</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n78">
+      <data key="v_id">n78</data>
+      <data key="v_degree">0.315789473684211</data>
+      <data key="v_clustering_coefficient">0.0666666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n79">
+      <data key="v_id">n79</data>
+      <data key="v_degree">0.263157894736842</data>
+      <data key="v_clustering_coefficient">0.1</data>
+      <data key="v_chi_degree">0</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n80">
+      <data key="v_id">n80</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.111111111111111</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n81">
+      <data key="v_id">n81</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.222222222222222</data>
+      <data key="v_chi_degree">0.168421052631579</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n82">
+      <data key="v_id">n82</data>
+      <data key="v_degree">0.315789473684211</data>
+      <data key="v_clustering_coefficient">0.466666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n83">
+      <data key="v_id">n83</data>
+      <data key="v_degree">0.684210526315789</data>
+      <data key="v_clustering_coefficient">0.0641025641025641</data>
+      <data key="v_chi_degree">0.673684210526316</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n84">
+      <data key="v_id">n84</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.19047619047619</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n85">
+      <data key="v_id">n85</data>
+      <data key="v_degree">0.157894736842105</data>
+      <data key="v_clustering_coefficient">0</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n86">
+      <data key="v_id">n86</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.0476190476190476</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n87">
+      <data key="v_id">n87</data>
+      <data key="v_degree">0.368421052631579</data>
+      <data key="v_clustering_coefficient">0.0952380952380952</data>
+      <data key="v_chi_degree">0.0421052631578947</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n88">
+      <data key="v_id">n88</data>
+      <data key="v_degree">0.315789473684211</data>
+      <data key="v_clustering_coefficient">0.0666666666666667</data>
+      <data key="v_chi_degree">0.0105263157894737</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n89">
+      <data key="v_id">n89</data>
+      <data key="v_degree">0.421052631578947</data>
+      <data key="v_clustering_coefficient">0.214285714285714</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n90">
+      <data key="v_id">n90</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.136363636363636</data>
+      <data key="v_chi_degree">0.51578947368421</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n91">
+      <data key="v_id">n91</data>
+      <data key="v_degree">0.421052631578947</data>
+      <data key="v_clustering_coefficient">0.0714285714285714</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n92">
+      <data key="v_id">n92</data>
+      <data key="v_degree">0.421052631578947</data>
+      <data key="v_clustering_coefficient">0.107142857142857</data>
+      <data key="v_chi_degree">0.0947368421052632</data>
+      <data key="v_kcore">0.75</data>
+    </node>
+    <node id="n93">
+      <data key="v_id">n93</data>
+      <data key="v_degree">0.578947368421053</data>
+      <data key="v_clustering_coefficient">0.163636363636364</data>
+      <data key="v_chi_degree">0.378947368421053</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n94">
+      <data key="v_id">n94</data>
+      <data key="v_degree">0.578947368421053</data>
+      <data key="v_clustering_coefficient">0.0545454545454545</data>
+      <data key="v_chi_degree">0.378947368421053</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n95">
+      <data key="v_id">n95</data>
+      <data key="v_degree">0.578947368421053</data>
+      <data key="v_clustering_coefficient">0.181818181818182</data>
+      <data key="v_chi_degree">0.378947368421053</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n96">
+      <data key="v_id">n96</data>
+      <data key="v_degree">0.684210526315789</data>
+      <data key="v_clustering_coefficient">0.128205128205128</data>
+      <data key="v_chi_degree">0.673684210526316</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n97">
+      <data key="v_id">n97</data>
+      <data key="v_degree">0.526315789473684</data>
+      <data key="v_clustering_coefficient">0.2</data>
+      <data key="v_chi_degree">0.263157894736842</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n98">
+      <data key="v_id">n98</data>
+      <data key="v_degree">1</data>
+      <data key="v_clustering_coefficient">0.0994152046783626</data>
+      <data key="v_chi_degree">2.06315789473684</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n99">
+      <data key="v_id">n99</data>
+      <data key="v_degree">0.947368421052632</data>
+      <data key="v_clustering_coefficient">0.117647058823529</data>
+      <data key="v_chi_degree">1.77894736842105</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <edge source="n0" target="n31">
+    </edge>
+    <edge source="n0" target="n87">
+    </edge>
+    <edge source="n1" target="n43">
+    </edge>
+    <edge source="n1" target="n94">
+    </edge>
+    <edge source="n2" target="n65">
+    </edge>
+    <edge source="n2" target="n87">
+    </edge>
+    <edge source="n2" target="n91">
+    </edge>
+    <edge source="n3" target="n92">
+    </edge>
+    <edge source="n4" target="n21">
+    </edge>
+    <edge source="n5" target="n56">
+    </edge>
+    <edge source="n5" target="n98">
+    </edge>
+    <edge source="n6" target="n22">
+    </edge>
+    <edge source="n6" target="n68">
+    </edge>
+    <edge source="n6" target="n99">
+    </edge>
+    <edge source="n7" target="n24">
+    </edge>
+    <edge source="n7" target="n80">
+    </edge>
+    <edge source="n7" target="n86">
+    </edge>
+    <edge source="n7" target="n93">
+    </edge>
+    <edge source="n9" target="n21">
+    </edge>
+    <edge source="n9" target="n60">
+    </edge>
+    <edge source="n9" target="n69">
+    </edge>
+    <edge source="n11" target="n30">
+    </edge>
+    <edge source="n11" target="n75">
+    </edge>
+    <edge source="n12" target="n67">
+    </edge>
+    <edge source="n12" target="n83">
+    </edge>
+    <edge source="n13" target="n35">
+    </edge>
+    <edge source="n13" target="n70">
+    </edge>
+    <edge source="n13" target="n95">
+    </edge>
+    <edge source="n14" target="n56">
+    </edge>
+    <edge source="n15" target="n60">
+    </edge>
+    <edge source="n15" target="n67">
+    </edge>
+    <edge source="n15" target="n77">
+    </edge>
+    <edge source="n16" target="n58">
+    </edge>
+    <edge source="n16" target="n82">
+    </edge>
+    <edge source="n16" target="n99">
+    </edge>
+    <edge source="n17" target="n33">
+    </edge>
+    <edge source="n17" target="n37">
+    </edge>
+    <edge source="n17" target="n64">
+    </edge>
+    <edge source="n18" target="n37">
+    </edge>
+    <edge source="n18" target="n82">
+    </edge>
+    <edge source="n18" target="n98">
+    </edge>
+    <edge source="n19" target="n88">
+    </edge>
+    <edge source="n20" target="n60">
+    </edge>
+    <edge source="n20" target="n76">
+    </edge>
+    <edge source="n20" target="n77">
+    </edge>
+    <edge source="n21" target="n46">
+    </edge>
+    <edge source="n22" target="n28">
+    </edge>
+    <edge source="n22" target="n48">
+    </edge>
+    <edge source="n22" target="n99">
+    </edge>
+    <edge source="n23" target="n38">
+    </edge>
+    <edge source="n23" target="n43">
+    </edge>
+    <edge source="n23" target="n60">
+    </edge>
+    <edge source="n23" target="n69">
+    </edge>
+    <edge source="n23" target="n83">
+    </edge>
+    <edge source="n23" target="n93">
+    </edge>
+    <edge source="n23" target="n99">
+    </edge>
+    <edge source="n24" target="n78">
+    </edge>
+    <edge source="n25" target="n85">
+    </edge>
+    <edge source="n25" target="n97">
+    </edge>
+    <edge source="n25" target="n98">
+    </edge>
+    <edge source="n27" target="n88">
+    </edge>
+    <edge source="n27" target="n97">
+    </edge>
+    <edge source="n27" target="n99">
+    </edge>
+    <edge source="n28" target="n60">
+    </edge>
+    <edge source="n28" target="n65">
+    </edge>
+    <edge source="n28" target="n77">
+    </edge>
+    <edge source="n29" target="n53">
+    </edge>
+    <edge source="n29" target="n86">
+    </edge>
+    <edge source="n29" target="n87">
+    </edge>
+    <edge source="n30" target="n91">
+    </edge>
+    <edge source="n30" target="n98">
+    </edge>
+    <edge source="n31" target="n79">
+    </edge>
+    <edge source="n31" target="n98">
+    </edge>
+    <edge source="n31" target="n99">
+    </edge>
+    <edge source="n32" target="n51">
+    </edge>
+    <edge source="n32" target="n60">
+    </edge>
+    <edge source="n32" target="n90">
+    </edge>
+    <edge source="n32" target="n98">
+    </edge>
+    <edge source="n33" target="n50">
+    </edge>
+    <edge source="n34" target="n54">
+    </edge>
+    <edge source="n34" target="n68">
+    </edge>
+    <edge source="n34" target="n83">
+    </edge>
+    <edge source="n34" target="n86">
+    </edge>
+    <edge source="n34" target="n88">
+    </edge>
+    <edge source="n35" target="n97">
+    </edge>
+    <edge source="n36" target="n71">
+    </edge>
+    <edge source="n36" target="n76">
+    </edge>
+    <edge source="n37" target="n42">
+    </edge>
+    <edge source="n37" target="n84">
+    </edge>
+    <edge source="n37" target="n95">
+    </edge>
+    <edge source="n37" target="n98">
+    </edge>
+    <edge source="n38" target="n47">
+    </edge>
+    <edge source="n38" target="n55">
+    </edge>
+    <edge source="n39" target="n42">
+    </edge>
+    <edge source="n39" target="n52">
+    </edge>
+    <edge source="n39" target="n86">
+    </edge>
+    <edge source="n39" target="n98">
+    </edge>
+    <edge source="n40" target="n96">
+    </edge>
+    <edge source="n40" target="n99">
+    </edge>
+    <edge source="n41" target="n66">
+    </edge>
+    <edge source="n41" target="n72">
+    </edge>
+    <edge source="n41" target="n83">
+    </edge>
+    <edge source="n41" target="n84">
+    </edge>
+    <edge source="n41" target="n96">
+    </edge>
+    <edge source="n42" target="n45">
+    </edge>
+    <edge source="n42" target="n67">
+    </edge>
+    <edge source="n42" target="n83">
+    </edge>
+    <edge source="n42" target="n89">
+    </edge>
+    <edge source="n42" target="n99">
+    </edge>
+    <edge source="n43" target="n71">
+    </edge>
+    <edge source="n43" target="n83">
+    </edge>
+    <edge source="n44" target="n70">
+    </edge>
+    <edge source="n44" target="n76">
+    </edge>
+    <edge source="n46" target="n84">
+    </edge>
+    <edge source="n47" target="n69">
+    </edge>
+    <edge source="n47" target="n78">
+    </edge>
+    <edge source="n47" target="n80">
+    </edge>
+    <edge source="n47" target="n92">
+    </edge>
+    <edge source="n48" target="n90">
+    </edge>
+    <edge source="n49" target="n55">
+    </edge>
+    <edge source="n49" target="n77">
+    </edge>
+    <edge source="n49" target="n80">
+    </edge>
+    <edge source="n49" target="n90">
+    </edge>
+    <edge source="n49" target="n96">
+    </edge>
+    <edge source="n50" target="n66">
+    </edge>
+    <edge source="n50" target="n94">
+    </edge>
+    <edge source="n51" target="n64">
+    </edge>
+    <edge source="n51" target="n70">
+    </edge>
+    <edge source="n51" target="n83">
+    </edge>
+    <edge source="n51" target="n89">
+    </edge>
+    <edge source="n51" target="n94">
+    </edge>
+    <edge source="n52" target="n64">
+    </edge>
+    <edge source="n52" target="n71">
+    </edge>
+    <edge source="n52" target="n91">
+    </edge>
+    <edge source="n53" target="n76">
+    </edge>
+    <edge source="n53" target="n78">
+    </edge>
+    <edge source="n53" target="n87">
+    </edge>
+    <edge source="n53" target="n98">
+    </edge>
+    <edge source="n54" target="n64">
+    </edge>
+    <edge source="n54" target="n93">
+    </edge>
+    <edge source="n54" target="n98">
+    </edge>
+    <edge source="n54" target="n99">
+    </edge>
+    <edge source="n55" target="n80">
+    </edge>
+    <edge source="n55" target="n93">
+    </edge>
+    <edge source="n55" target="n96">
+    </edge>
+    <edge source="n56" target="n61">
+    </edge>
+    <edge source="n56" target="n91">
+    </edge>
+    <edge source="n57" target="n80">
+    </edge>
+    <edge source="n57" target="n94">
+    </edge>
+    <edge source="n59" target="n70">
+    </edge>
+    <edge source="n59" target="n76">
+    </edge>
+    <edge source="n59" target="n81">
+    </edge>
+    <edge source="n59" target="n86">
+    </edge>
+    <edge source="n60" target="n70">
+    </edge>
+    <edge source="n60" target="n72">
+    </edge>
+    <edge source="n60" target="n73">
+    </edge>
+    <edge source="n60" target="n83">
+    </edge>
+    <edge source="n60" target="n85">
+    </edge>
+    <edge source="n60" target="n90">
+    </edge>
+    <edge source="n60" target="n94">
+    </edge>
+    <edge source="n61" target="n66">
+    </edge>
+    <edge source="n61" target="n94">
+    </edge>
+    <edge source="n62" target="n64">
+    </edge>
+    <edge source="n62" target="n80">
+    </edge>
+    <edge source="n62" target="n82">
+    </edge>
+    <edge source="n62" target="n91">
+    </edge>
+    <edge source="n62" target="n95">
+    </edge>
+    <edge source="n62" target="n96">
+    </edge>
+    <edge source="n62" target="n97">
+    </edge>
+    <edge source="n62" target="n98">
+    </edge>
+    <edge source="n63" target="n66">
+    </edge>
+    <edge source="n63" target="n79">
+    </edge>
+    <edge source="n64" target="n83">
+    </edge>
+    <edge source="n64" target="n96">
+    </edge>
+    <edge source="n65" target="n76">
+    </edge>
+    <edge source="n65" target="n90">
+    </edge>
+    <edge source="n66" target="n67">
+    </edge>
+    <edge source="n66" target="n71">
+    </edge>
+    <edge source="n66" target="n77">
+    </edge>
+    <edge source="n67" target="n72">
+    </edge>
+    <edge source="n68" target="n94">
+    </edge>
+    <edge source="n68" target="n95">
+    </edge>
+    <edge source="n69" target="n88">
+    </edge>
+    <edge source="n69" target="n91">
+    </edge>
+    <edge source="n70" target="n71">
+    </edge>
+    <edge source="n70" target="n97">
+    </edge>
+    <edge source="n71" target="n74">
+    </edge>
+    <edge source="n71" target="n83">
+    </edge>
+    <edge source="n72" target="n79">
+    </edge>
+    <edge source="n72" target="n81">
+    </edge>
+    <edge source="n72" target="n90">
+    </edge>
+    <edge source="n72" target="n93">
+    </edge>
+    <edge source="n72" target="n95">
+    </edge>
+    <edge source="n72" target="n97">
+    </edge>
+    <edge source="n73" target="n91">
+    </edge>
+    <edge source="n74" target="n78">
+    </edge>
+    <edge source="n74" target="n79">
+    </edge>
+    <edge source="n74" target="n96">
+    </edge>
+    <edge source="n75" target="n87">
+    </edge>
+    <edge source="n75" target="n90">
+    </edge>
+    <edge source="n75" target="n92">
+    </edge>
+    <edge source="n75" target="n94">
+    </edge>
+    <edge source="n76" target="n89">
+    </edge>
+    <edge source="n76" target="n93">
+    </edge>
+    <edge source="n76" target="n96">
+    </edge>
+    <edge source="n77" target="n84">
+    </edge>
+    <edge source="n77" target="n89">
+    </edge>
+    <edge source="n77" target="n93">
+    </edge>
+    <edge source="n77" target="n99">
+    </edge>
+    <edge source="n78" target="n90">
+    </edge>
+    <edge source="n78" target="n92">
+    </edge>
+    <edge source="n79" target="n96">
+    </edge>
+    <edge source="n80" target="n81">
+    </edge>
+    <edge source="n80" target="n86">
+    </edge>
+    <edge source="n80" target="n97">
+    </edge>
+    <edge source="n81" target="n88">
+    </edge>
+    <edge source="n81" target="n90">
+    </edge>
+    <edge source="n81" target="n92">
+    </edge>
+    <edge source="n81" target="n94">
+    </edge>
+    <edge source="n81" target="n95">
+    </edge>
+    <edge source="n81" target="n97">
+    </edge>
+    <edge source="n82" target="n96">
+    </edge>
+    <edge source="n82" target="n98">
+    </edge>
+    <edge source="n82" target="n99">
+    </edge>
+    <edge source="n83" target="n87">
+    </edge>
+    <edge source="n83" target="n93">
+    </edge>
+    <edge source="n83" target="n98">
+    </edge>
+    <edge source="n84" target="n93">
+    </edge>
+    <edge source="n84" target="n95">
+    </edge>
+    <edge source="n84" target="n99">
+    </edge>
+    <edge source="n85" target="n89">
+    </edge>
+    <edge source="n86" target="n95">
+    </edge>
+    <edge source="n87" target="n90">
+    </edge>
+    <edge source="n88" target="n92">
+    </edge>
+    <edge source="n89" target="n93">
+    </edge>
+    <edge source="n89" target="n98">
+    </edge>
+    <edge source="n89" target="n99">
+    </edge>
+    <edge source="n90" target="n94">
+    </edge>
+    <edge source="n90" target="n95">
+    </edge>
+    <edge source="n91" target="n98">
+    </edge>
+    <edge source="n92" target="n96">
+    </edge>
+    <edge source="n92" target="n99">
+    </edge>
+    <edge source="n93" target="n99">
+    </edge>
+    <edge source="n94" target="n99">
+    </edge>
+    <edge source="n95" target="n97">
+    </edge>
+    <edge source="n95" target="n98">
+    </edge>
+    <edge source="n96" target="n98">
+    </edge>
+    <edge source="n96" target="n99">
+    </edge>
+    <edge source="n97" target="n98">
+    </edge>
+    <edge source="n98" target="n99">
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,1 @@
+from .GNN_ND import vanilla_models

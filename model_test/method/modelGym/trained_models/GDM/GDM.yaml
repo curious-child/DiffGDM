@@ -1,0 +1,79 @@
+dataset:
+  features:
+  - degree
+  - clustering_coefficient
+  - kcore
+  - chi_degree
+  dataset_path: dataset/GDM_dataset/train_dataset
+  graph_filter: '*'
+  target: t_0.18
+  task: node
+  task_type: regression
+loss:
+  decay_pow: 2
+  epochb: 40
+  first_step_cons: 1.0
+  lambda_decay_epoch: 5
+  lambda_decay_rate: 1
+  lambdap: 70.0
+  loss_metric: MSELoss
+  lrbl: 10
+  min_lambda_times: 0.01
+  num_f: 1
+  presave_ratio: 0.1
+  reconstruction_loss_alpha: 0
+  s_epoch: 10
+  s_gamma: 0.5
+  sum: true
+net:
+  batch_nodes_train: 200
+  declayers_act: Leakyrelu
+  declayers_dim: 20
+  declayers_num: 2
+  device: cuda
+  enclayers_act: Leakyrelu
+  enclayers_dim: 40
+  enclayers_gnn: GATConv
+  enclayers_gnn_param:
+    concat: true
+    dropout: 0.5
+    heads: 2
+    negative_slope: 0.2
+  enclayers_norm: MeanSubtractionNorm
+  enclayers_num: 2
+  enclayers_skip: add
+  encoder_graph_state: false
+  gnn_name: ND_GNN_vanilla
+  gstate_pool_name: add
+  num_features: 4
+  prelayers_act: ELU
+  prelayers_dim: 40
+  prelayers_gnn: GATConv
+  prelayers_gnn_param:
+    concat: true
+    dropout: 0.5
+    heads: 2
+    negative_slope: 0.2
+  prelayers_norm: PairNorm
+  prelayers_num: 0
+  prelayers_skip: add
+optimizer:
+  MstepLR_gamma: 0.1
+  MstepLR_milestones:
+  - 50
+  lr: 0.01
+  optimizer_name: Adam
+  scheduler: MultiStepLR
+  scheduler_set: true
+  weight_decay: 1e-5
+train:
+  batch_size: 8
+  ckpt: true
+  ckpt_period: 100
+  device: cuda
+  model_evaluation: hold_out
+  score_metrics:
+  - kendall_rank
+  - r2
+  train_epochs: 800
+  traindata_size: 0.8

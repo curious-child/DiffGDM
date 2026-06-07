@@ -1,0 +1,92 @@
+out_dir: results/robustness_metrics_models_natural_connectivity
+dataset:
+  task: ["graph"]
+  task_type: ["regression"]
+  file_path: ["dataset/train_dataset_new"]
+  features: [["random"]]
+  targets: ["natural_connectivity"]
+  graph_filter: ["*"]
+  SL: [True]
+train:
+  model_evaluation: ["hold_out"]
+  traindata_size: [0.8]
+  device: ["cuda"]
+  score_metrics: [ [ "mse","r2" ] ]
+  batch_size: [128]
+  train_epochs: [300]
+  ckpt: [ True ]
+  ckpt_period: [ 100 ]
+net:
+  gnn_name: [robustenss_metircs_model]
+  prelayers_num: [2,4]
+  prelayers_dim: [40,80]
+  prelayers_gnn: ["SAGEConv","ResGatedGraphConv"]
+  prelayers_skip: ["none"]
+  prelayers_act: ["ReLU"]
+  prelayers_norm: ["GraphNorm"]
+  prelayers_gnn_param:
+    SAGEConv:
+      aggr: ["sum"]
+      project: [False]
+      normalize: [False]
+      root_weight: [False]
+      bias: [True]
+    GatedGraphConv:
+      aggr: ["add"]
+      bias: [True]
+      mun_layers: [2]
+    ResGatedGraphConv:
+      root_weight: [True]
+      bias: [True]
+    GATConv:
+      heads: [2]
+      concat: [True]
+      dropout: [0.5]
+      negative_slope: [0.2]
+    GraphConv:
+      aggr: ["add"]
+      bias: [True]
+    PNAConv:
+      aggregators: [["mean","sum","min","max","std"],["mean","min","max","std"],["sum","min","max","std"],["sum"]]
+      scalers: [["identity","attenuation","amplification"],["identity","inverse_linear","linear"],["identity"]]
+  enclayers_num: [0,2]
+  enclayers_dim: [ 40 ]
+  enclayers_gnn: ["GATConv","SAGEConv"]
+  enclayers_skip: [ "none" ]
+  enclayers_gnn_param:
+    SAGEConv:
+      aggr: ["mean"]
+      project: [ False ]
+      normalize: [ False ]
+      root_weight: [ True ]
+      bias: [ True ]
+    GatedGraphConv:
+      aggr: [ "add","mean" ]
+      bias: [ True ]
+      mun_layers: [ 2 ]
+    ResGatedGraphConv:
+      root_weight: [ True ]
+      bias: [ True ]
+    GATConv:
+      heads: [ 2 ]
+      concat: [ True ]
+      dropout: [0.5]
+      negative_slope: [ 0.2 ]
+  enclayers_act: ["ReLU"]
+  #enclayers_norm: []
+  enclayers_norm: ["PairNorm"]
+  gstate_pool_name: ["add","mean","max"]
+  declayers_num: [2,4]
+  declayers_dim: [40]
+  declayers_act: [ "ReLU"]
+
+loss:
+  loss_metric: ["MSELoss"]
+optimizer:
+  optimizer_name: [Adam]
+  lr: [0.01,0.001]
+  weight_decay: [ 1e-5]
+  scheduler_set: [False,True]
+  scheduler: [MultiStepLR]
+  MstepLR_milestones: [[50]]
+  MstepLR_gamma: [0.1]

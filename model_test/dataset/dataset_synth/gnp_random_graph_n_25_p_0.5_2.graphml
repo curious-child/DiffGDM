@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_degree" for="node" attr.name="degree" attr.type="double"/>
+  <key id="v_clustering_coefficient" for="node" attr.name="clustering_coefficient" attr.type="double"/>
+  <key id="v_chi_degree" for="node" attr.name="chi_degree" attr.type="double"/>
+  <key id="v_kcore" for="node" attr.name="kcore" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_id">n0</data>
+      <data key="v_degree">0.684210526315789</data>
+      <data key="v_clustering_coefficient">0.653846153846154</data>
+      <data key="v_chi_degree">0.00220930232558139</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n1">
+      <data key="v_id">n1</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.590909090909091</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n2">
+      <data key="v_id">n2</data>
+      <data key="v_degree">0.578947368421053</data>
+      <data key="v_clustering_coefficient">0.709090909090909</data>
+      <data key="v_chi_degree">0.0291370869033047</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n3">
+      <data key="v_id">n3</data>
+      <data key="v_degree">0.894736842105263</data>
+      <data key="v_clustering_coefficient">0.558823529411765</data>
+      <data key="v_chi_degree">0.0401529987760098</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n4">
+      <data key="v_id">n4</data>
+      <data key="v_degree">0.842105263157895</data>
+      <data key="v_clustering_coefficient">0.591666666666667</data>
+      <data key="v_chi_degree">0.0191921664626683</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n5">
+      <data key="v_id">n5</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.515151515151515</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n6">
+      <data key="v_id">n6</data>
+      <data key="v_degree">0.789473684210526</data>
+      <data key="v_clustering_coefficient">0.542857142857143</data>
+      <data key="v_chi_degree">0.00588127294981641</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n7">
+      <data key="v_id">n7</data>
+      <data key="v_degree">0.842105263157895</data>
+      <data key="v_clustering_coefficient">0.583333333333333</data>
+      <data key="v_chi_degree">0.0191921664626683</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n8">
+      <data key="v_id">n8</data>
+      <data key="v_degree">0.789473684210526</data>
+      <data key="v_clustering_coefficient">0.59047619047619</data>
+      <data key="v_chi_degree">0.00588127294981641</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n9">
+      <data key="v_id">n9</data>
+      <data key="v_degree">0.894736842105263</data>
+      <data key="v_clustering_coefficient">0.558823529411765</data>
+      <data key="v_chi_degree">0.0401529987760098</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n10">
+      <data key="v_id">n10</data>
+      <data key="v_degree">0.947368421052632</data>
+      <data key="v_clustering_coefficient">0.535947712418301</data>
+      <data key="v_chi_degree">0.0687637698898409</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n11">
+      <data key="v_id">n11</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.636363636363636</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n12">
+      <data key="v_id">n12</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.694444444444444</data>
+      <data key="v_chi_degree">0.0866646266829865</data>
+      <data key="v_kcore">0.818181818181818</data>
+    </node>
+    <node id="n13">
+      <data key="v_id">n13</data>
+      <data key="v_degree">0.947368421052632</data>
+      <data key="v_clustering_coefficient">0.562091503267974</data>
+      <data key="v_chi_degree">0.0687637698898409</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n14">
+      <data key="v_id">n14</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.666666666666667</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n15">
+      <data key="v_id">n15</data>
+      <data key="v_degree">0.736842105263158</data>
+      <data key="v_clustering_coefficient">0.56043956043956</data>
+      <data key="v_chi_degree">0.000220318237454101</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n16">
+      <data key="v_id">n16</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.560606060606061</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n17">
+      <data key="v_id">n17</data>
+      <data key="v_degree">0.789473684210526</data>
+      <data key="v_clustering_coefficient">0.561904761904762</data>
+      <data key="v_chi_degree">0.00588127294981641</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n18">
+      <data key="v_id">n18</data>
+      <data key="v_degree">0.473684210526316</data>
+      <data key="v_clustering_coefficient">0.638888888888889</data>
+      <data key="v_chi_degree">0.0866646266829865</data>
+      <data key="v_kcore">0.818181818181818</data>
+    </node>
+    <node id="n19">
+      <data key="v_id">n19</data>
+      <data key="v_degree">0.526315789473684</data>
+      <data key="v_clustering_coefficient">0.644444444444444</data>
+      <data key="v_chi_degree">0.0540758873929008</data>
+      <data key="v_kcore">0.818181818181818</data>
+    </node>
+    <node id="n20">
+      <data key="v_id">n20</data>
+      <data key="v_degree">0.736842105263158</data>
+      <data key="v_clustering_coefficient">0.56043956043956</data>
+      <data key="v_chi_degree">0.000220318237454101</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n21">
+      <data key="v_id">n21</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.621212121212121</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n22">
+      <data key="v_id">n22</data>
+      <data key="v_degree">0.631578947368421</data>
+      <data key="v_clustering_coefficient">0.666666666666667</data>
+      <data key="v_chi_degree">0.0118482252141983</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n23">
+      <data key="v_id">n23</data>
+      <data key="v_degree">1</data>
+      <data key="v_clustering_coefficient">0.555555555555556</data>
+      <data key="v_chi_degree">0.105024479804162</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <node id="n24">
+      <data key="v_id">n24</data>
+      <data key="v_degree">0.736842105263158</data>
+      <data key="v_clustering_coefficient">0.593406593406593</data>
+      <data key="v_chi_degree">0.000220318237454101</data>
+      <data key="v_kcore">1</data>
+    </node>
+    <edge source="n0" target="n2">
+    </edge>
+    <edge source="n0" target="n3">
+    </edge>
+    <edge source="n2" target="n3">
+    </edge>
+    <edge source="n0" target="n4">
+    </edge>
+    <edge source="n2" target="n4">
+    </edge>
+    <edge source="n1" target="n5">
+    </edge>
+    <edge source="n3" target="n5">
+    </edge>
+    <edge source="n4" target="n5">
+    </edge>
+    <edge source="n0" target="n6">
+    </edge>
+    <edge source="n1" target="n6">
+    </edge>
+    <edge source="n2" target="n6">
+    </edge>
+    <edge source="n3" target="n6">
+    </edge>
+    <edge source="n4" target="n6">
+    </edge>
+    <edge source="n5" target="n6">
+    </edge>
+    <edge source="n0" target="n7">
+    </edge>
+    <edge source="n3" target="n7">
+    </edge>
+    <edge source="n5" target="n7">
+    </edge>
+    <edge source="n1" target="n8">
+    </edge>
+    <edge source="n3" target="n8">
+    </edge>
+    <edge source="n4" target="n8">
+    </edge>
+    <edge source="n7" target="n8">
+    </edge>
+    <edge source="n0" target="n9">
+    </edge>
+    <edge source="n1" target="n9">
+    </edge>
+    <edge source="n2" target="n9">
+    </edge>
+    <edge source="n3" target="n9">
+    </edge>
+    <edge source="n4" target="n9">
+    </edge>
+    <edge source="n6" target="n9">
+    </edge>
+    <edge source="n7" target="n9">
+    </edge>
+    <edge source="n8" target="n9">
+    </edge>
+    <edge source="n0" target="n10">
+    </edge>
+    <edge source="n1" target="n10">
+    </edge>
+    <edge source="n3" target="n10">
+    </edge>
+    <edge source="n4" target="n10">
+    </edge>
+    <edge source="n6" target="n10">
+    </edge>
+    <edge source="n7" target="n10">
+    </edge>
+    <edge source="n8" target="n10">
+    </edge>
+    <edge source="n0" target="n11">
+    </edge>
+    <edge source="n3" target="n11">
+    </edge>
+    <edge source="n4" target="n11">
+    </edge>
+    <edge source="n6" target="n11">
+    </edge>
+    <edge source="n9" target="n11">
+    </edge>
+    <edge source="n3" target="n12">
+    </edge>
+    <edge source="n6" target="n12">
+    </edge>
+    <edge source="n8" target="n12">
+    </edge>
+    <edge source="n9" target="n12">
+    </edge>
+    <edge source="n10" target="n12">
+    </edge>
+    <edge source="n0" target="n13">
+    </edge>
+    <edge source="n1" target="n13">
+    </edge>
+    <edge source="n2" target="n13">
+    </edge>
+    <edge source="n3" target="n13">
+    </edge>
+    <edge source="n4" target="n13">
+    </edge>
+    <edge source="n7" target="n13">
+    </edge>
+    <edge source="n8" target="n13">
+    </edge>
+    <edge source="n9" target="n13">
+    </edge>
+    <edge source="n11" target="n13">
+    </edge>
+    <edge source="n0" target="n14">
+    </edge>
+    <edge source="n1" target="n14">
+    </edge>
+    <edge source="n2" target="n14">
+    </edge>
+    <edge source="n3" target="n14">
+    </edge>
+    <edge source="n4" target="n14">
+    </edge>
+    <edge source="n6" target="n14">
+    </edge>
+    <edge source="n7" target="n14">
+    </edge>
+    <edge source="n9" target="n14">
+    </edge>
+    <edge source="n10" target="n14">
+    </edge>
+    <edge source="n11" target="n14">
+    </edge>
+    <edge source="n13" target="n14">
+    </edge>
+    <edge source="n3" target="n15">
+    </edge>
+    <edge source="n5" target="n15">
+    </edge>
+    <edge source="n6" target="n15">
+    </edge>
+    <edge source="n7" target="n15">
+    </edge>
+    <edge source="n9" target="n15">
+    </edge>
+    <edge source="n10" target="n15">
+    </edge>
+    <edge source="n11" target="n15">
+    </edge>
+    <edge source="n12" target="n15">
+    </edge>
+    <edge source="n0" target="n16">
+    </edge>
+    <edge source="n1" target="n16">
+    </edge>
+    <edge source="n4" target="n16">
+    </edge>
+    <edge source="n5" target="n16">
+    </edge>
+    <edge source="n8" target="n16">
+    </edge>
+    <edge source="n10" target="n16">
+    </edge>
+    <edge source="n13" target="n16">
+    </edge>
+    <edge source="n15" target="n16">
+    </edge>
+    <edge source="n2" target="n17">
+    </edge>
+    <edge source="n4" target="n17">
+    </edge>
+    <edge source="n5" target="n17">
+    </edge>
+    <edge source="n7" target="n17">
+    </edge>
+    <edge source="n8" target="n17">
+    </edge>
+    <edge source="n10" target="n17">
+    </edge>
+    <edge source="n11" target="n17">
+    </edge>
+    <edge source="n12" target="n17">
+    </edge>
+    <edge source="n13" target="n17">
+    </edge>
+    <edge source="n15" target="n17">
+    </edge>
+    <edge source="n3" target="n18">
+    </edge>
+    <edge source="n7" target="n18">
+    </edge>
+    <edge source="n10" target="n18">
+    </edge>
+    <edge source="n12" target="n18">
+    </edge>
+    <edge source="n13" target="n18">
+    </edge>
+    <edge source="n15" target="n18">
+    </edge>
+    <edge source="n17" target="n18">
+    </edge>
+    <edge source="n1" target="n19">
+    </edge>
+    <edge source="n5" target="n19">
+    </edge>
+    <edge source="n7" target="n19">
+    </edge>
+    <edge source="n8" target="n19">
+    </edge>
+    <edge source="n9" target="n19">
+    </edge>
+    <edge source="n13" target="n19">
+    </edge>
+    <edge source="n18" target="n19">
+    </edge>
+    <edge source="n1" target="n20">
+    </edge>
+    <edge source="n2" target="n20">
+    </edge>
+    <edge source="n3" target="n20">
+    </edge>
+    <edge source="n6" target="n20">
+    </edge>
+    <edge source="n7" target="n20">
+    </edge>
+    <edge source="n9" target="n20">
+    </edge>
+    <edge source="n10" target="n20">
+    </edge>
+    <edge source="n11" target="n20">
+    </edge>
+    <edge source="n13" target="n20">
+    </edge>
+    <edge source="n16" target="n20">
+    </edge>
+    <edge source="n17" target="n20">
+    </edge>
+    <edge source="n19" target="n20">
+    </edge>
+    <edge source="n4" target="n21">
+    </edge>
+    <edge source="n5" target="n21">
+    </edge>
+    <edge source="n7" target="n21">
+    </edge>
+    <edge source="n8" target="n21">
+    </edge>
+    <edge source="n9" target="n21">
+    </edge>
+    <edge source="n10" target="n21">
+    </edge>
+    <edge source="n11" target="n21">
+    </edge>
+    <edge source="n13" target="n21">
+    </edge>
+    <edge source="n16" target="n21">
+    </edge>
+    <edge source="n17" target="n21">
+    </edge>
+    <edge source="n19" target="n21">
+    </edge>
+    <edge source="n0" target="n22">
+    </edge>
+    <edge source="n1" target="n22">
+    </edge>
+    <edge source="n3" target="n22">
+    </edge>
+    <edge source="n4" target="n22">
+    </edge>
+    <edge source="n5" target="n22">
+    </edge>
+    <edge source="n6" target="n22">
+    </edge>
+    <edge source="n8" target="n22">
+    </edge>
+    <edge source="n10" target="n22">
+    </edge>
+    <edge source="n15" target="n22">
+    </edge>
+    <edge source="n16" target="n22">
+    </edge>
+    <edge source="n20" target="n22">
+    </edge>
+    <edge source="n0" target="n23">
+    </edge>
+    <edge source="n1" target="n23">
+    </edge>
+    <edge source="n2" target="n23">
+    </edge>
+    <edge source="n3" target="n23">
+    </edge>
+    <edge source="n4" target="n23">
+    </edge>
+    <edge source="n5" target="n23">
+    </edge>
+    <edge source="n7" target="n23">
+    </edge>
+    <edge source="n8" target="n23">
+    </edge>
+    <edge source="n9" target="n23">
+    </edge>
+    <edge source="n10" target="n23">
+    </edge>
+    <edge source="n11" target="n23">
+    </edge>
+    <edge source="n12" target="n23">
+    </edge>
+    <edge source="n13" target="n23">
+    </edge>
+    <edge source="n15" target="n23">
+    </edge>
+    <edge source="n17" target="n23">
+    </edge>
+    <edge source="n19" target="n23">
+    </edge>
+    <edge source="n20" target="n23">
+    </edge>
+    <edge source="n22" target="n23">
+    </edge>
+    <edge source="n2" target="n24">
+    </edge>
+    <edge source="n4" target="n24">
+    </edge>
+    <edge source="n6" target="n24">
+    </edge>
+    <edge source="n7" target="n24">
+    </edge>
+    <edge source="n8" target="n24">
+    </edge>
+    <edge source="n10" target="n24">
+    </edge>
+    <edge source="n13" target="n24">
+    </edge>
+    <edge source="n14" target="n24">
+    </edge>
+    <edge source="n15" target="n24">
+    </edge>
+    <edge source="n16" target="n24">
+    </edge>
+    <edge source="n17" target="n24">
+    </edge>
+    <edge source="n18" target="n24">
+    </edge>
+    <edge source="n21" target="n24">
+    </edge>
+    <edge source="n23" target="n24">
+    </edge>
+  </graph>
+</graphml>
