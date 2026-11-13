@@ -60,15 +60,7 @@ python experiments_figure/generate_figures.py --paper-figures 2 3
 python experiments_figure/generate_figures.py --paper-figures S2 S3 --overwrite
 ```
 
-Figure 5 has a dedicated Toy-network experiment:
-
-```bash
-python model_test/toy_model_analysis.py
-```
-
-This entry constructs the seed-19 network, evaluates DiffGDM_base, MVC-guided DiffGDM and BPD, and saves the six panels with the graph and selected node sets. Subsequent plots can be generated from the saved JSON using `--plot-only`.
-
-The [figure guide](experiments_figure/README.md) lists the inputs, plotting functions and commands for each figure, including the Toy experiment's verification status.
+The [figure guide](experiments_figure/README.md) lists the data sources, plotting functions and reproduction commands for all main-text and supplementary figures.
 
 ## Training
 
