@@ -56,10 +56,12 @@ Paths in the data column are relative to `experiments_figure/data/`.
 | S3 | Four hyperparameter sweeps | Other four JSON files in `parameters/` | Same parameter-sensitivity function |
 | S4 | Forest metric changes | `residual_forest.json` | Same paired forest plotting function as Figure 7 |
 
-Figure 5's original PDF is included for viewing. Its recovered experiment entry
-is described below. The all-figure command currently reports that the original
-six panel node sets still need to be archived and generates the other eleven
-figures; it does not run the Toy experiment implicitly.
+Figure 5's original PDF and experiment code are included. The original script
+saved the six-panel image, but did not serialize its selected node sets. The
+recovered entry below can save those sets as JSON when the experiment is run.
+The all-figure command generates the other eleven figures; Figure 5 uses its
+dedicated experiment entry. Full rerun agreement with the historical panels
+has not yet been verified.
 The `reference/` PDFs support visual comparisons; the experimental plots are
 generated from numerical data, rather than from these reference PDFs.
 
