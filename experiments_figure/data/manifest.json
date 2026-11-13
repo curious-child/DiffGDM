@@ -40,7 +40,7 @@
     },
     "5": {
       "status": "SOURCE_NEEDED",
-      "reason": "Toy experiment entry recovered; historical panel node sets still need to be archived",
+      "reason": "Original Toy figure and experiment code are included. The original script saved only an image, not panel node-set records; full rerun agreement remains unverified.",
       "experiment_entry": "model_test/toy_model_analysis.py"
     },
     "S1": {
