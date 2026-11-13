@@ -69,18 +69,18 @@
       "png_sha256": "84f0f405d97f4d1bf695485fa05c23f57236d6cb89f2d2ecc5800e8051c55511"
     }
   },
-  "remaining_source_items": {
-    "5": "Original figure and experiment code included; original script did not serialize panel node sets. Full rerun agreement with the historical panels remains unverified."
-  },
+  "remaining_source_items": {},
   "toy_entry": {
     "path": "model_test/toy_model_analysis.py",
     "graph_generation": "PASS: seed 19, 80 nodes, 120 edges, original generator preserved",
     "solve_draw_order": "PASS: original method and plotting sequence retained",
     "api_calls": "PASS: current public method names; decycling route retained",
-    "full_algorithm_rerun": "NOT_RUN"
+    "full_algorithm_rerun": "NOT_RUN",
+    "unified_entry": "--paper-figures 5; --paper-all includes the original Toy experiment",
+    "dispatch_tests": "PASS: original entry, options, output manifest, overwrite protection and failure propagation"
   },
   "contracts": {
-    "source_integrity_tests": 9,
+    "source_integrity_tests": 12,
     "figure3_numeric_cells": 560,
     "figure6_numeric_cells": 364,
     "s1_saved_loss_values": 800,

@@ -1,4 +1,4 @@
-"""Portable, result-only rendering for the current paper figure numbers."""
+"""Unified reproduction entry for the current paper figure numbers."""
 from __future__ import annotations
 
 import argparse
@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -96,6 +97,21 @@ def draw(number, entry, ns):
     raise ValueError('No renderer for figure ' + number)
 
 
+def run_experiment_entry(entry, out=None, *, check=False, overwrite=False):
+    """Dispatch the original experiment in its own process and environment."""
+    script = (ROOT / entry['experiment_entry']).resolve()
+    if not script.is_relative_to(ROOT.resolve()) or not script.is_file():
+        raise ValueError('Invalid experiment entry: ' + entry['experiment_entry'])
+    command = [sys.executable, str(script)]
+    if check:
+        command.append('--check')
+    else:
+        command.extend(['--output-dir', str(out)])
+        if overwrite:
+            command.append('--overwrite')
+    subprocess.run(command, cwd=ROOT, check=True)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     select = parser.add_mutually_exclusive_group(required=True)
@@ -107,7 +123,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     manifest = read(DATA / 'manifest.json')
     selected = args.paper_figures or ORDER
-    # The check path uses only the standard library and writes nothing.
+    # Check inputs and graph construction without inference or output files.
     for relative, expected in manifest['sha256'].items():
         path = (ROOT / relative).resolve()
         if not path.is_relative_to(ROOT.resolve()) or sha(path) != expected:
@@ -119,6 +135,8 @@ def main(argv=None):
               ((' - ' + item['reason']) if item.get('reason') else ''))
         if item['status'] == 'SOURCE_NEEDED':
             unavailable.append(number)
+        if args.check and item['status'] == 'EXPERIMENT':
+            run_experiment_entry(item, check=True)
     if args.check:
         return 3 if unavailable else 0
     out = args.output_dir.resolve()
@@ -128,11 +146,10 @@ def main(argv=None):
         if number in unavailable:
             continue
         stem = 'Figure' + (number if number.startswith('S') else number.zfill(2))
-        if not args.overwrite and any((out / (stem + ext)).exists() for ext in ('.pdf', '.png')):
+        extensions = ('.pdf', '.png', '.json') if manifest['figures'][number]['status'] == 'EXPERIMENT' else ('.pdf', '.png')
+        if not args.overwrite and any((out / (stem + ext)).exists() for ext in extensions):
             raise FileExistsError('Output exists; use --overwrite: ' + stem)
-    ns = namespace()
-    ns['mpl'].rcParams.update({'pdf.fonttype': 42, 'svg.fonttype': 'none',
-                              'pdf.compression': 6, 'text.usetex': False})
+    ns = None
     out.mkdir(parents=True, exist_ok=True)
     results = {}
     for number in selected:
@@ -140,7 +157,9 @@ def main(argv=None):
             continue
         stem = 'Figure' + (number if number.startswith('S') else number.zfill(2))
         entry = manifest['figures'][number]
-        if entry['status'] == 'VECTOR_ASSET':
+        if entry['status'] == 'EXPERIMENT':
+            run_experiment_entry(entry, out, overwrite=args.overwrite)
+        elif entry['status'] == 'VECTOR_ASSET':
             shutil.copyfile(DATA / entry['asset'], out / (stem + '.pdf'))
             try:
                 import pypdfium2 as pdfium
@@ -157,6 +176,10 @@ def main(argv=None):
                     scale = min(300 / 72, 2400 / max(page.get_size()))
                     page.render(scale=scale).to_pil().save(out / (stem + '.png'))
         else:
+            if ns is None:
+                ns = namespace()
+                ns['mpl'].rcParams.update({'pdf.fonttype': 42, 'svg.fonttype': 'none',
+                                          'pdf.compression': 6, 'text.usetex': False})
             style = {'font.family': 'DejaVu Sans' if number == 'S1' else 'Arial',
                      'font.size': 8 if number in ('7', 'S4') else 10,
                      'pdf.fonttype': 42, 'text.usetex': False}
@@ -168,6 +191,8 @@ def main(argv=None):
                 fig.savefig(out / (stem + '.png'), dpi=300, bbox_inches=bbox)
                 ns['plt'].close(fig)
         results[number] = {ext: sha(out / (stem + '.' + ext)) for ext in ('pdf', 'png')}
+        if entry['status'] == 'EXPERIMENT':
+            results[number]['json'] = sha(out / (stem + '.json'))
     # Keep this run record in the output directory, never in the source tree.
     (out / 'run_manifest.json').write_text(json.dumps({'figures': results,
         'unavailable': unavailable, 'data_manifest_sha256': sha(DATA / 'manifest.json')}, indent=2), encoding='utf-8')

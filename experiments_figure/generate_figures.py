@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Dispatch existing paper plotting functions. Never evaluate an algorithm.
+"""Dispatch existing paper reproduction functions.
 
 All visual construction remains in the author's model_test plotting modules.
-Figures 5/10 have known missing original inputs; Figure 12 is forbidden.
+The current-paper interface includes the original Toy experiment. Legacy
+profiles use saved results; Figure 12 is forbidden.
 """
 from __future__ import annotations
 
@@ -71,7 +72,7 @@ FUNCTIONS = {
     11: ("dismantle_model_params_analysis", "draw_paper_parameter_sensitivity"),
 }
 MISSING = {
-    5: "Original toy graph, six removal sets, and original highlight/layout information are unavailable; 111 old PNGs are not source data.",
+    5: "Use --paper-figures 5 to reproduce this figure through the original Toy experiment.",
     10: "Original epoch/train_scores/val_scores trace is unavailable; do not retrain or digitize the old PDF.",
 }
 

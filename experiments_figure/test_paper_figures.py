@@ -23,6 +23,44 @@ def load_toy():
 
 
 class ToyEntryTests(unittest.TestCase):
+    def test_unified_dispatch_preserves_entry_and_options(self):
+        entry = {'experiment_entry': 'model_test/toy_model_analysis.py'}
+        with patch.object(paper.subprocess, 'run') as run:
+            paper.run_experiment_entry(entry, Path('output'), overwrite=True)
+        run.assert_called_once_with([
+            sys.executable, str((paper.ROOT / entry['experiment_entry']).resolve()),
+            '--output-dir', 'output', '--overwrite'], cwd=paper.ROOT, check=True)
+
+    def test_unified_check_does_not_run_algorithms(self):
+        entry = {'experiment_entry': 'model_test/toy_model_analysis.py'}
+        with patch.object(paper.subprocess, 'run') as run:
+            paper.run_experiment_entry(entry, check=True)
+        self.assertEqual(run.call_args.args[0][-1], '--check')
+        self.assertNotIn('--output-dir', run.call_args.args[0])
+
+    def test_unified_outputs_and_failure_propagation(self):
+        # Stub only the expensive experiment; verify real routing, output
+        # checks and manifest handling without running a model in this test.
+        with tempfile.TemporaryDirectory() as directory:
+            out = Path(directory) / 'figures'
+
+            def complete(entry, destination, **kwargs):
+                self.assertEqual(entry['experiment_entry'], 'model_test/toy_model_analysis.py')
+                for suffix in ('.pdf', '.png', '.json'):
+                    (destination / ('Figure05' + suffix)).write_bytes(b'test fixture')
+
+            with patch.object(paper, 'run_experiment_entry', side_effect=complete), \
+                 patch.object(paper, 'namespace', side_effect=AssertionError('Unrelated renderer loaded')):
+                self.assertEqual(paper.main(['--paper-figures', '5', '--output-dir', str(out)]), 0)
+                result = paper.read(out / 'run_manifest.json')
+                self.assertEqual(result['unavailable'], [])
+                self.assertEqual(set(result['figures']['5']), {'pdf', 'png', 'json'})
+                with self.assertRaises(FileExistsError):
+                    paper.main(['--paper-figures', '5', '--output-dir', str(out)])
+            with patch.object(paper, 'run_experiment_entry', side_effect=subprocess.CalledProcessError(1, 'toy')):
+                with self.assertRaises(subprocess.CalledProcessError):
+                    paper.main(['--paper-figures', '5', '--output-dir', str(out), '--overwrite'])
+
     def test_original_graph_and_seed(self):
         toy = load_toy()
         graph = toy.build_toy_graph()

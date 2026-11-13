@@ -47,16 +47,17 @@ Synthetic experiments use Barabási–Albert, Erdős–Rényi, Watts–Strogatz 
 
 ## Reproduce manuscript figures
 
-From the repository root, generate figures from saved local results:
+From the repository root, reproduce the manuscript figures:
 
 ```bash
-python experiments_figure/generate_figures.py --paper-figures 1 2 3 4 6 7 8 S1 S2 S3 S4
+python experiments_figure/generate_figures.py --paper-all
 ```
 
-The command calls the original plotting functions and writes PDF and PNG files to `experiments_figure/outputs/paper/`. It uses local data without running model inference. Individual figures can be selected:
+The command uses the original plotting and experiment entries and writes PDF and PNG files to `experiments_figure/outputs/paper/`. Saved-result plots read local data; the Toy comparison runs its original algorithms in the experiment environment. Select any figure by its manuscript number:
 
 ```bash
 python experiments_figure/generate_figures.py --paper-figures 2 3
+python experiments_figure/generate_figures.py --paper-figures 5
 python experiments_figure/generate_figures.py --paper-figures S2 S3 --overwrite
 ```
 

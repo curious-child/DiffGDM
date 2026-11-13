@@ -39,8 +39,7 @@
       "asset": "assets/model_framework.pdf"
     },
     "5": {
-      "status": "SOURCE_NEEDED",
-      "reason": "Original Toy figure and experiment code are included. The original script saved only an image, not panel node-set records; full rerun agreement remains unverified.",
+      "status": "EXPERIMENT",
       "experiment_entry": "model_test/toy_model_analysis.py"
     },
     "S1": {
@@ -134,7 +133,7 @@
     "experiments_figure/data/records/scalability_random/48.json": "cdec675d3073f5b82ca375697ce1eecf8511001a6e4eb6a48289e54dbb9e8201",
     "experiments_figure/data/records/scalability_random/49.json": "94b3b0dbaf3b266d7a5667116ebf93bbe9594820cc89fbe9afd7df73394d7e75",
     "experiments_figure/data/records/timing/ensemble_postprocess_timing_dedup_20261111.json": "e39c29e2e92a57123d777af6761e9606b5940da4875d6290ecc0f032202b6435",
-    "experiments_figure/paper_figures.py": "b5a95d4c88dd658c53b3def601d32db797d887ef539acb826bbda97fa105ef09",
+    "experiments_figure/paper_figures.py": "837f3b71c2e20ccf31694c6c2721d8fc9f30f8f13d14bdbd1587d13aa360cadd",
     "model_test/analysis_visi/LCC_size_removed_nodes.py": "e07fe106fff60bcb1e74fb89c01b8bc5debb0c2d5405dc570df583b4730d06d3",
     "model_test/decycling_dismantling_analysis.py": "4e78236ee96795cf8004e1581b69c38e2f20b851f92f60f54f269f818d2766ae",
     "model_test/dismantle_model_params_analysis.py": "e91dfe85770b7294248b8c8e9eea3440824edd081cb1294bfa904e7791255808",
