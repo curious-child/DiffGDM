@@ -1,0 +1,93 @@
+{
+  "schema": "diffgdm-paper-reproduction-audit-v1",
+  "date": "2026-11-13",
+  "figures": {
+    "Figure01": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "9dc0c3cbbf5d82011a3194ebd556ddaef2d364fe0ab271ab644f4d31e30c0e0a",
+      "png_sha256": "fe270d1a38c0ab7313e12c84bb3ab1efc64b14bb919251b2abaebde74ef65f7a"
+    },
+    "Figure02": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "814715b57640f6e73102b21ec44b92c49c4b4402218ce58e1cf0d4145a325f38",
+      "png_sha256": "f8fa5c38d0c6a3c37c16f453a67644c0ce795328ed459f3a302fa66822dae37b"
+    },
+    "Figure03": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "665c9e238164ab3b071aa2a87f6c2d6212c3f0d318e101d93a35ac872d741113",
+      "png_sha256": "95402b15c74de78957d2302262c132bc9ee0926f37a1bbf18a30bce834303565"
+    },
+    "Figure04": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "6135cab947dba16c47b953d5d3d7ca7999eaf8874f9ffcdd851cb4f93ebc4935",
+      "png_sha256": "34a809aeadf0ed5c973d4f9b7d1d581be9515df93a833ae70fe2a38a47f11853"
+    },
+    "Figure06": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "69ef0cdfc00956da86fb5e00554a9576e13dc3e5a72cf1560bc3ebc3855f6368",
+      "png_sha256": "aef9ed894f13d0f692a1a44f90b53d4213a68ca3644d65e0554ebec82e9426cb"
+    },
+    "Figure07": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "e6bbb4c6fb7cc54b021542e578e8313f1ce769a292dc48fdff18b3e1c8be2f02",
+      "png_sha256": "590631c272eef21a04a6bbc885d9bf3c56e8e83b290e1703838f00676e16f8e2"
+    },
+    "Figure08": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "56ae6d09f91e8b0c3984514151d8d58121c175dd1abdeb93c0baaf054262113f",
+      "png_sha256": "f5169b7d1e35080591c21cdb0a9a753746808f086f9a5c52b7502996bf58a982"
+    },
+    "FigureS1": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "eacd6af0151a0e2551f4f61da2e446c7714e53e85ae55ca7f7ad2402985dd0e4",
+      "png_sha256": "2d4a595c169bdf4da145870eec796e003221106e891ac6afe43f5bdbcbf6de69"
+    },
+    "FigureS2": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "1800eafabc9e871fabc8b99b4d3d7b17a1da08f7aa2da2861769b2c36cd4ae99",
+      "png_sha256": "f762d64736cd4fd730837e0a24690d1f9a81ce77189e974b77e69b27014fb863"
+    },
+    "FigureS3": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "c4fd016d00295f02dd5bae7eb511bb91182db49c46563270adfd38b1600d61a6",
+      "png_sha256": "a9e559ccc777c578f049ce53cb83c6f8d73006e19be74fb49102eb82850e2eb5"
+    },
+    "FigureS4": {
+      "relocated_local_render": "PASS",
+      "repeat_pdf_and_png_sha256": "PASS",
+      "pdf_sha256": "2af637323743e52afc4317db286992831c191b4193639c0a416d46f69c5ccd3e",
+      "png_sha256": "84f0f405d97f4d1bf695485fa05c23f57236d6cb89f2d2ecc5800e8051c55511"
+    }
+  },
+  "remaining_source_items": {
+    "5": "Historical panel node sets; the recovered Toy entry has not been rerun"
+  },
+  "toy_entry": {
+    "path": "model_test/toy_model_analysis.py",
+    "graph_generation": "PASS: seed 19, 80 nodes, 120 edges, original generator preserved",
+    "solve_draw_order": "PASS: original method and plotting sequence retained",
+    "api_calls": "PASS: current public method names; decycling route retained",
+    "full_algorithm_rerun": "NOT_RUN"
+  },
+  "contracts": {
+    "source_integrity_tests": 9,
+    "figure3_numeric_cells": 560,
+    "figure6_numeric_cells": 364,
+    "s1_saved_loss_values": 800,
+    "original_s1_vector_path_max_residual_points": 1e-06,
+    "s2_s3": "400 graphs per point; direct means; no bands",
+    "relocation": "Independent checkout without experiment_ops/server_result_import",
+    "visual_review": "11 PNGs inspected; original PDF layouts and insets retained",
+    "inference_or_training_runs": 0
+  }
+}

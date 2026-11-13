@@ -1,0 +1,63 @@
+dataset:
+  SL: true
+  features: None
+  file_path: dataset/train_dataset_new
+  graph_filter: '*'
+  targets: 2-core decycling
+  task: node
+  task_type: classification
+loss:
+  loss_metric: CrossEntropyLoss
+net:
+  GNNEncoder_param:
+    gconv: AGNNConv
+    gconv_param:
+      aggregation: sum
+      gated: true
+      learn_norm: true
+      mode: residual
+      norm: layer
+      sparse: true
+      track_norm: false
+    hidden_dim: 64
+    learn_norm: true
+    n_layers: 12
+  GNNEncoder_set: T2TGNNEncoder
+  MVC_P: 100
+  diffusion_schedule: linear
+  diffusion_steps: 1000
+  diffusion_type: discretFlow
+  gradient_estimator_type: cost_estimator
+  infer_direction: MVC
+  inference_diffusion_steps: 20
+  inference_schedule: cosine
+  loss_weight_schedule: constant
+  norm: true
+  parallel_sampling: 4
+  rewrite: true
+  rewrite_ratio: 0.5
+  rewrite_steps: 3
+  sequential_sampling: 2
+  target_weight: 1.0
+  task_model: FVSModel
+  timewarping_set: false
+  use_tag: true
+optimizer:
+  MstepLR_gamma: 0.1
+  MstepLR_milestones:
+  - 50
+  lr: 0.0001
+  optimizer_name: Adam
+  scheduler: MultiStepLR
+  scheduler_set: false
+  weight_decay: 1e-5
+train:
+  ckpt: true
+  ckpt_period: 100
+  device: cuda:0
+  model_evaluation: hold_out
+  test_set: true
+  train_batch_size: 128
+  train_epochs: 400
+  traindata_size: 0.95
+  val_batch_size: 64

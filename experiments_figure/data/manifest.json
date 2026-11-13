@@ -1,0 +1,146 @@
+{
+  "schema": "diffgdm-paper-figures-v1",
+  "figures": {
+    "2": {
+      "status": "READY",
+      "input": "figure2.json"
+    },
+    "3": {
+      "status": "READY",
+      "input": "figure3.json"
+    },
+    "6": {
+      "status": "READY",
+      "input": "figure6.json"
+    },
+    "4": {
+      "status": "READY"
+    },
+    "7": {
+      "status": "READY",
+      "input": "residual_forest.json"
+    },
+    "S4": {
+      "status": "READY",
+      "input": "residual_forest.json"
+    },
+    "S2": {
+      "status": "READY"
+    },
+    "S3": {
+      "status": "READY"
+    },
+    "8": {
+      "status": "READY",
+      "input": "figure8.json"
+    },
+    "1": {
+      "status": "VECTOR_ASSET",
+      "asset": "assets/model_framework.pdf"
+    },
+    "5": {
+      "status": "SOURCE_NEEDED",
+      "reason": "Toy experiment entry recovered; historical panel node sets still need to be archived",
+      "experiment_entry": "model_test/toy_model_analysis.py"
+    },
+    "S1": {
+      "status": "READY",
+      "input": "training/figure_s1_record_scores.json",
+      "source": "DFM_training_test / grid_search / config_1",
+      "verification": "Original red and blue vector paths agree with the saved trace within 1e-6 PDF points after affine canvas registration"
+    }
+  },
+  "sha256": {
+    "experiments_figure/data/figure2.json": "a7977afe43438bb735c6b2b9ec6a36eb4bcdecfb8aee94209b16adcee1cee511",
+    "experiments_figure/data/figure3.json": "a164244b3c6af1eeb9d8801b08c936c13fc118df8dbb332af76e8028f2ad7dbb",
+    "experiments_figure/data/figure6.json": "0b70c2170890fcc76deb7b4272c798078a4cfb59e674308e61165429bec3b362",
+    "experiments_figure/data/figure8.json": "a42f8a2ad6c7ea8970c504d96cb1ead2d5fdd2cc65aac59e74d5e89507cf6baf",
+    "experiments_figure/data/residual_forest.json": "bc852155ff78a1e4e72c7a3aed4e741d9749f1ae2341dc1e0462c3f5dda8ad1a",
+    "experiments_figure/data/assets/model_framework.pdf": "9dc0c3cbbf5d82011a3194ebd556ddaef2d364fe0ab271ab644f4d31e30c0e0a",
+    "experiments_figure/data/auc/graphs_properties_ACC_AUC.json": "7d346f87cf91481605aec382ced889690bc87354bbfb0e99a4f8ddc6b1716d77",
+    "experiments_figure/data/auc/graphs_properties_GE_AUC.json": "b2653b18f654cd426c5ca00b9dae3c2de16afee5e44dda32c11651bd601a23bc",
+    "experiments_figure/data/auc/graphs_properties_LCC_AUC.json": "2f59d4cc05d0867bde93db3473106671d515f40472d5fe83937f5e69e4f73a3a",
+    "experiments_figure/data/auc/graphs_properties_NC_AUC.json": "4dd3ee82b3da7fd8d231a77d1a30d0573f0eee33ab18d59c0446b15366d928ba",
+    "experiments_figure/data/parameters/dismantle_perform_GNN_Dims.json": "7806b77b33d3ad8508f5c1c0ca9b2447f554530594632731a60ccc2c5948dc7d",
+    "experiments_figure/data/parameters/dismantle_perform_GNN_Layers.json": "1c76cc0f6765e80ca86cf6de30d18f353b7a5ae568d2b88ecd47198b4c839860",
+    "experiments_figure/data/parameters/dismantle_perform_Inference_Diffusion_Steps.json": "c3764d75eecdc22f52b910b8b701966cb20bedf2d61a38a9d4255c916949a1b6",
+    "experiments_figure/data/parameters/dismantle_perform_Rewrite_Ratio.json": "02a9b1f0889f2bbdd0b7c03e2260aa5d730af4616483e139f2bc491e9461c5c1",
+    "experiments_figure/data/parameters/dismantle_perform_Rewrite_Steps.json": "33f117f96673f46fbf0fcf80389973e553e7b468e3ccd1e057e6a24dffd6db7f",
+    "experiments_figure/data/records/scalability_ensemble.json": "cbd6b2efdbc7fa5a94f2b5db8ed92327f43cad7ea7ffeca624b33dc189e68a8c",
+    "experiments_figure/data/records/scalability_random_summary.json": "2480abcc8ca84542449c7d6b8dace713b4780f83b5eff5562eee359e02868500",
+    "experiments_figure/data/records/single_run_controls.json": "9a4ee1d9c5a60e2a1a78b3cd50510bad6f02ab89dd67b524b23cc8ecf48ffd29",
+    "experiments_figure/data/reference/Figure1.pdf": "9dc0c3cbbf5d82011a3194ebd556ddaef2d364fe0ab271ab644f4d31e30c0e0a",
+    "experiments_figure/data/reference/Figure2.pdf": "e08cb0277a6eed19ee34e62349debddb0d7c2d050ba969ad1da598e93392cf4f",
+    "experiments_figure/data/reference/Figure3.pdf": "fdd3f38190b3b644547139604f2bc6638931b500e53ad072ee81e41ea1df1294",
+    "experiments_figure/data/reference/Figure4.pdf": "e27eeffcd1c9ce7803c176598786206d635739abb1d21bbbac2aa76286b3563a",
+    "experiments_figure/data/reference/Figure5.pdf": "0b3a2bce40d80e2f8dc1f02935fe91e6817ac5d08b3e1cf2413869d02c944ef9",
+    "experiments_figure/data/reference/Figure6.pdf": "d89a1a75fecbee1a726748eadc4f9205c1939817b8f0124aa2919bf512e204de",
+    "experiments_figure/data/reference/Figure7.pdf": "96f799fb47b0a6ca41fa7945128e424dd55a76e248707c7905d4ca0fdd51ffeb",
+    "experiments_figure/data/reference/Figure8.pdf": "0f4c6687c6f0d1258a0a83c39ad54f38ab4072c609f22fed2fdf6fc8ba9e8cc8",
+    "experiments_figure/data/reference/FigureS1.pdf": "3eb89de9a196e9c0850abe69d120cb71dd2c516b8c21c053ad771f2d9853e3c1",
+    "experiments_figure/data/reference/FigureS2.pdf": "18cd81a2da1eee1e43aca01b98ed75e3947c37171725e13d40db48fc060ec534",
+    "experiments_figure/data/reference/FigureS3.pdf": "0e43c12260dec3749e19402a72d9fb045b2c017f4fc9fab5762f39dfea0b14a0",
+    "experiments_figure/data/reference/FigureS4.pdf": "3013adea73ecb95508183a72987e9253ee9d50bdcc30af5c5299f1a2306536e9",
+    "experiments_figure/data/training/figure_s1_config.yaml": "b85fd1613e43666f8ba76fa9504d7d12589574c697ea540b61f645945f993121",
+    "experiments_figure/data/training/figure_s1_record_scores.json": "832e1931ff786500b1733f524e99ca4f5493713ed7732af8104d8cd91fc97c99",
+    "experiments_figure/data/records/scalability_random/00.json": "8c0a566dbf516bb17acb4f5e6cc8745b40531370eba2ace772c6d046df48ee0d",
+    "experiments_figure/data/records/scalability_random/01.json": "185614709ac4b1d4dc1cec900fd9d55eff0d4ce107535a649c1b22f2d0c6e0fd",
+    "experiments_figure/data/records/scalability_random/02.json": "b313998faf36e6ed0d1e78222baafc80d07ad5022d26779dbca149b64cdfb62d",
+    "experiments_figure/data/records/scalability_random/03.json": "7b71ec45282b49c4f7fdf2fc78420fe41ed7d80cd46aa3ac1d35568cd1c5a402",
+    "experiments_figure/data/records/scalability_random/04.json": "4acdaefa70d4121ae7c76371fc13690999a02e33f65400ae6e5685a14f6f3384",
+    "experiments_figure/data/records/scalability_random/05.json": "6c552a47ff0e1ac392e2c60d4b4dd3c0bfa92444fcd4363ee9190ba3c77f8ead",
+    "experiments_figure/data/records/scalability_random/06.json": "c39e0e9a6439605621b9b9d0f71ca825dea4670c2785619b4ef181240fe8273a",
+    "experiments_figure/data/records/scalability_random/07.json": "9145a7cedbd72cee4035cccc417e5dc809ac8a8b43909ff20668da8cc781b229",
+    "experiments_figure/data/records/scalability_random/08.json": "6b406258930b4e2cb3d5f9a4200c9c89d6143dd17de3166b43e39404e3f7f572",
+    "experiments_figure/data/records/scalability_random/09.json": "53065a00f67f5eecfc253740439dad9989620c46416aec5de3a9b412c0d08b2c",
+    "experiments_figure/data/records/scalability_random/10.json": "329c924c228a48a029a4811d47c330f6c89bfa08cb0cf91d26d623d525def717",
+    "experiments_figure/data/records/scalability_random/11.json": "bd8a45aafe55db361821f0d07d1b321ef172fb9b4ffca700228d3c2323982063",
+    "experiments_figure/data/records/scalability_random/12.json": "8ea59e89b04fe3407efa46ac4932c7edb6e8937e8d98a4701cae875fe1debb90",
+    "experiments_figure/data/records/scalability_random/13.json": "6e90976b31e233df94628bdcf2fecd5e39e1692da3740f7a5ad00fcc12debe87",
+    "experiments_figure/data/records/scalability_random/14.json": "2513c9e8061a27b47e917ad9a28aec88b08f440e21a4837d828a1d18442ca124",
+    "experiments_figure/data/records/scalability_random/15.json": "e5de48dd79b5758de80fcdd05011115b4224188737731b5ff548caaed5c4fdf9",
+    "experiments_figure/data/records/scalability_random/16.json": "98e0a5362bb1335efe205cd5c6c1604422a35e1482cb33ea79221b675fe36691",
+    "experiments_figure/data/records/scalability_random/17.json": "7b8a8827ffdfeac93d8669b4358defde6704f596cda24470a746200de6a47b9a",
+    "experiments_figure/data/records/scalability_random/18.json": "31690dcb60deb715453f3c65569de3d7d1923172c6b65df9e299f3a6e4782f34",
+    "experiments_figure/data/records/scalability_random/19.json": "95349644f66606d4e16f9267b8eb96fbec06734bb7aabf589212690fd4df9197",
+    "experiments_figure/data/records/scalability_random/20.json": "3e2c6a500eceec0dac9fa062f1a8b8d92c46fd88d488deda64173234d4b17fdf",
+    "experiments_figure/data/records/scalability_random/21.json": "62fa354ecebcc8579691afa756fd14ad77378ec51f1dcfed8e0d0bd205aae43e",
+    "experiments_figure/data/records/scalability_random/22.json": "4cc4559741cd3eff82ba484afd11f15adbab5acc48fe04fddcdbb28156885254",
+    "experiments_figure/data/records/scalability_random/23.json": "16f4f9abbde541bbbf89aed63d84184444ac30573fd1c27af36c597f313d2441",
+    "experiments_figure/data/records/scalability_random/24.json": "276c32fad35befa473e13ac8585537acec10cf0249d301bfde3e7c03c76adfa1",
+    "experiments_figure/data/records/scalability_random/25.json": "3577774fc0ca5b486d315f7baa45755cfcd968b5e793fa30b7c17e09e56a0361",
+    "experiments_figure/data/records/scalability_random/26.json": "dedbd8ffc136d80ef2b555d10eb5fbd837c8ffb80c3700caebb61ef1be325570",
+    "experiments_figure/data/records/scalability_random/27.json": "379466df33ac2ce0f0b58b4ee63526c13e9310b1b4134dbcc7f2ecdb33e9d3fc",
+    "experiments_figure/data/records/scalability_random/28.json": "d64a7a09d9e2616560b9d36b342d9ce085583600c9c2b0a0bd881287ae773755",
+    "experiments_figure/data/records/scalability_random/29.json": "233d35d11c8c075ea61326aaf2aa77deee026924ea16a208a9cf09e63aac2837",
+    "experiments_figure/data/records/scalability_random/30.json": "13c3006f1258b7ef1e8c515ac25edc34962a0b7b3659d43782e0dd3e8e901201",
+    "experiments_figure/data/records/scalability_random/31.json": "ea10904654c8c5d8cbb33ff2afea19870591578cd85242837d999c6cfe0d19aa",
+    "experiments_figure/data/records/scalability_random/32.json": "5cc76a8cee55ac91b40026b99a16b39cc5f864a555c77247263dce110e3c7828",
+    "experiments_figure/data/records/scalability_random/33.json": "4e945d8d0a4a3326641a7a192384fd0c1e72d3bc5817c506a8480fdbcc564a46",
+    "experiments_figure/data/records/scalability_random/34.json": "d65b8a18ef7ecdf1f3d24aa29ed1864160fe9b93cb1d603937fcf54375c9f15f",
+    "experiments_figure/data/records/scalability_random/35.json": "955b76f99e6c2da029e6d746f57bbfb9e723ebe0a2920f534c197f54bedacab8",
+    "experiments_figure/data/records/scalability_random/36.json": "967fe1317c21a53ec00c4707daeba1f562a9bf83f9a4f15cf0ccdfb2f682e60d",
+    "experiments_figure/data/records/scalability_random/37.json": "bbb7042c34672b321e23a07a2370e1e7c0b2bb927897158a37aabf2c198d9324",
+    "experiments_figure/data/records/scalability_random/38.json": "a236415822832c2bd02ff612b77f6f002501830561a057465c813379e7738d1e",
+    "experiments_figure/data/records/scalability_random/39.json": "0dffec4c21dcf99cee2a9a44a8011f7b70ee96ea30433e86e63b51100cb01896",
+    "experiments_figure/data/records/scalability_random/40.json": "6a2a664b7526053caad8f92b2a6fa4992c04e52dfc09f460313d8abc48fb7838",
+    "experiments_figure/data/records/scalability_random/41.json": "b2663c770c864fde456e968c6a4166397723205606f4f7239d331a96511bb3cc",
+    "experiments_figure/data/records/scalability_random/42.json": "4c2c7846b5d818d9c61fa71f44b1211b77595ea17f2c58d0ed207c8089e0c92c",
+    "experiments_figure/data/records/scalability_random/43.json": "3f3484f51723308ad612bfa1eaca98777ced543b45941f7f60c86057835c1ad6",
+    "experiments_figure/data/records/scalability_random/44.json": "a91ca75e9838dd8d1f83c6b7d65a614585c5a58dd5a746074c4e42d7277c77b5",
+    "experiments_figure/data/records/scalability_random/45.json": "328a820e74e6cbb8a98537d9fe5e8726450b01963f627f7e5f08d2c7da2227df",
+    "experiments_figure/data/records/scalability_random/46.json": "49c88b7f45ea2315655a866c012b5d4bd9e0736b23572f249179754e99954132",
+    "experiments_figure/data/records/scalability_random/47.json": "e5753f0b8125fce77dad4107691a0b04c04493d3af122bb891b9a0f8c5ed7282",
+    "experiments_figure/data/records/scalability_random/48.json": "cdec675d3073f5b82ca375697ce1eecf8511001a6e4eb6a48289e54dbb9e8201",
+    "experiments_figure/data/records/scalability_random/49.json": "94b3b0dbaf3b266d7a5667116ebf93bbe9594820cc89fbe9afd7df73394d7e75",
+    "experiments_figure/data/records/timing/ensemble_postprocess_timing_dedup_20261111.json": "e39c29e2e92a57123d777af6761e9606b5940da4875d6290ecc0f032202b6435",
+    "experiments_figure/paper_figures.py": "b5a95d4c88dd658c53b3def601d32db797d887ef539acb826bbda97fa105ef09",
+    "model_test/analysis_visi/LCC_size_removed_nodes.py": "e07fe106fff60bcb1e74fb89c01b8bc5debb0c2d5405dc570df583b4730d06d3",
+    "model_test/decycling_dismantling_analysis.py": "4e78236ee96795cf8004e1581b69c38e2f20b851f92f60f54f269f818d2766ae",
+    "model_test/dismantle_model_params_analysis.py": "e91dfe85770b7294248b8c8e9eea3440824edd081cb1294bfa904e7791255808",
+    "model_train/utils/data_visualization.py": "7984cb68760d236f36f4fcb01808d2425f1e69e4163f7bf33e549fbcfe05bb07",
+    "model_test/toy_model_analysis.py": "8a2e7b85d1d84b08cf5db1d9ce8491f982773d2e5dc63e5194de078f839dbc7f"
+  },
+  "statistics": "Final paper: single-run comparisons; S2/S3 direct means over four families of 100 graphs",
+  "original_run_manifest_sha256": "f22c5383e3feb9fc4c5c11ac9449111d7d380385bea0374aea96accdbafdbc20"
+}

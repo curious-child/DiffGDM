@@ -85,6 +85,9 @@ model_test/method/**/graph.txt_out
 *.xls
 
 # Keep source datasets and pretrained checkpoints tracked unless explicitly removed.
+!experiments_figure/data/assets/*.pdf
+!experiments_figure/data/reference/*.pdf
+experiments_figure/outputs/paper/
 !model_train/dataset/**
 !model_test/dataset/**
 !model_test/method/modelGym/trained_models/**

@@ -1,155 +1,98 @@
 # Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling
 
-This repository contains the code, datasets, pretrained checkpoints, and experiment scripts for the paper **"Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling"**.
+Implementation of **Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling** by Peng Zhang, Jun Fu, Tonglei Cheng and Rolf Findeisen.
 
-The main model in this project is **DiffGDM** (Diffusion Graph Dismantling Model), a structure-guided generative framework for network dismantling. DiffGDM is trained on network decycling as a proxy task and, during inference, uses structural guidance to search for node-removal sets that dismantle a network efficiently.
+DiffGDM learns a generative prior from feedback vertex sets and uses structural guidance to refine node selections for network dismantling. Generated scores support two downstream strategies: decycling followed by tree breaking and node reinsertion, or direct node removal followed by reinsertion. The ensemble variant combines structural guides and selects the smallest feasible dismantling set.
 
-## Overview
+This repository contains model training and evaluation code, pretrained checkpoints, network datasets and saved results for the manuscript figures.
 
-Network dismantling aims to find a small set of nodes whose removal collapses the largest connected component of a graph. Classical decycling-based methods first remove a feedback vertex set and then break the resulting forest, but the paper observes that the best decycling set is not always the best dismantling set on real-world networks.
+## Installation
 
-DiffGDM addresses this decycling-dismantling gap by:
+Use Python 3.10. The experiment environment uses PyTorch 2.0.1 with CUDA 11.8, PyTorch Geometric, NetworkX and igraph.
 
-- learning structural priors from decycling labels on synthetic graphs;
-- using a discrete flow matching / diffusion-style generative model for binary node-selection states;
-- injecting structural guidance during inference, such as LCC, global clustering coefficient, average clustering coefficient, global efficiency, natural connectivity, density, or MVC-based cost guidance;
-- applying tree-breaking and node-reinsertion post-processing to obtain final dismantling sets;
-- supporting independent guided trajectories and ensemble selection across multiple structural metrics.
+```bash
+git clone https://github.com/curious-child/DiffGDM.git
+cd DiffGDM
+git lfs install
+git lfs pull
 
-## Repository Structure
+conda create -n diffgdm python=3.10 -y
+conda activate diffgdm
+python -m pip install -r requirements.txt
+```
+
+For another CUDA version, install compatible PyTorch and PyTorch Geometric packages. To run the baseline experiments, install their third-party implementations and native tools under `model_test/method/`, including BPD and MinSum. These dependencies are separate from the saved-result plotting environment.
+
+For plotting saved results, use the smaller environment instead:
+
+```bash
+conda create -n diffgdm-figures python=3.10 -y
+conda activate diffgdm-figures
+python -m pip install -r experiments_figure/requirements.txt
+```
+
+## Data and checkpoints
 
 ```text
-.
-|-- model_train/
-|   |-- main_SSLtrain_diffusion.py        # Train DiffGDM / diffusion FVS model
-|   |-- main_SSLtrain_model_metrics.py    # Train graph metric prediction models used for guidance
-|   |-- configs/
-|   |   `-- grid_search/                  # Training configuration files
-|   |-- dataset/
-|   |   `-- train_dataset_new/            # Synthetic training graphs
-|   |-- models/                           # GNN, diffusion, and metric model definitions
-|   |-- train/                            # Training loops
-|   |-- loss_functions/                   # Diffusion and supervised losses
-|   |-- optimizers/                       # Optimizer and scheduler wrappers
-|   `-- analysis/                         # Training-side analysis and visualization tools
-|
-|-- model_test/
-|   |-- decycling_main.py                 # Decycling experiment entry point
-|   |-- dismantle_main.py                 # Dismantling experiment entry point
-|   |-- decycling_dismantling_analysis.py # Joint analysis scripts
-|   |-- graph_generate.py                 # Synthetic graph generation utilities
-|   |-- dataset/
-|   |   |-- dataset_synth/                # Synthetic benchmark graphs
-|   |   `-- dataset_real_all/             # Real-world benchmark graphs
-|   |-- method/
-|   |   |-- modelGym/                     # DiffGDM/GDM inference models and checkpoints
-|   |   |-- NodeRein/                     # Node reinsertion implementation
-|   |   `-- noderein_linux/               # Linux NodeRein helper
-|   |-- analysis_visi/                    # Plotting and metric analysis utilities
-|   |-- utils/                            # Graph metrics and data utilities
-|   `-- result/                           # Saved experiment results
-|
-|-- requirements.txt                      # Python dependencies
-`-- README.md
+model_train/dataset/                         Synthetic training graphs
+model_test/dataset/                          Evaluation networks
+model_test/method/modelGym/trained_models/   Generative-model checkpoints
+model_test/method/modelGym/Diffusion_model/
+  robustness_metrics_models/                Structural-guidance predictors
+model_test/result/DiffGDM/                   Saved experiment results
+experiments_figure/data/                     Plotting inputs and source records
 ```
 
-## Environment
+Synthetic experiments use Barabási–Albert, Erdős–Rényi, Watts–Strogatz and power-law networks. Real-network evaluations cover 27 networks. Graphs are stored in GraphML format. Large ensemble source records use Git LFS; `git lfs pull` retrieves them into the local directory structure.
 
-The code was developed with Python 3.9/3.10, PyTorch, PyTorch Geometric, NetworkX, and igraph. A CUDA-enabled GPU is recommended for training and large-scale inference.
+## Reproduce manuscript figures
 
-Example environment:
+From the repository root, generate figures from saved local results:
 
 ```bash
-conda create -n diffgdm python=3.10
-conda activate diffgdm
+python experiments_figure/generate_figures.py --paper-figures 1 2 3 4 6 7 8 S1 S2 S3 S4
 ```
 
-Install all dependencies with:
+The command calls the original plotting functions and writes PDF and PNG files to `experiments_figure/outputs/paper/`. It uses local data without running model inference. Individual figures can be selected:
 
 ```bash
-pip install -r requirements.txt
+python experiments_figure/generate_figures.py --paper-figures 2 3
+python experiments_figure/generate_figures.py --paper-figures S2 S3 --overwrite
 ```
 
-The provided `requirements.txt` follows the experiment environment used by this project and includes additional packages required by the DiffGDM training, inference, graph-analysis, and visualization scripts. It targets the PyTorch 2.0.1 / CUDA 11.8 wheel setup used by the saved environment; if your CUDA or PyTorch version differs, install the matching PyTorch, PyTorch Geometric, and `torch_sparse` wheels for your platform.
+Figure 5 has a dedicated Toy-network experiment:
 
-Notes:
+```bash
+python model_test/toy_model_analysis.py
+```
 
-- The pretrained DiffGDM checkpoints are under `model_test/method/modelGym/trained_models/`.
-- The structural metric guidance checkpoints are under `model_test/method/modelGym/Diffusion_model/robustness_metrics_models/`.
-- Some baseline algorithms referenced by the experiment scripts, such as MinSum, BPD, CoreHD, DQN, NIRM, CI, FINDER, or DomiRank, depend on external implementations. If you run all baselines, place the corresponding implementations under `model_test/method/` or adjust `method/method.py` to the subset of methods you want to evaluate.
+This entry constructs the seed-19 network, evaluates DiffGDM_base, MVC-guided DiffGDM and BPD, and saves the six panels with the graph and selected node sets. Subsequent plots can be generated from the saved JSON using `--plot-only`.
 
-## Data
-
-The repository includes two main data groups:
-
-- `model_train/dataset/train_dataset_new/`: synthetic training graphs generated from Barabasi-Albert, Erdos-Renyi, Watts-Strogatz, and static power-law graph families.
-- `model_test/dataset/`: benchmark graphs for evaluation.
-  - `dataset_synth/`: synthetic benchmark graphs with different graph families and graph sizes.
-  - `dataset_real_all/`: 27 real-world networks used for empirical evaluation.
-
-All graph files are stored in GraphML format.
+The [figure guide](experiments_figure/README.md) lists the inputs, plotting functions and commands for each figure, including the Toy experiment's verification status.
 
 ## Training
 
-Run training commands from the `model_train` directory.
-
-Train the DiffGDM diffusion model:
+Run the training scripts from `model_train/`:
 
 ```bash
 cd model_train
 python main_SSLtrain_diffusion.py --cfg configs/grid_search/diffusion_model_DFM.yaml --train_mode grid
-```
-
-Other diffusion configurations are available in:
-
-```text
-configs/grid_search/diffusion_model_DFM.yaml
-configs/grid_search/diffusion_model_gaussian.yaml
-configs/grid_search/diffusion_model_categorical.yaml
-```
-
-Train graph-level structural metric models used for guidance:
-
-```bash
-cd model_train
 python main_SSLtrain_model_metrics.py --cfg configs/grid_search/model_metrics.yaml --train_mode grid
 ```
 
-The training scripts support:
-
-- `grid`: grid search over the YAML parameter space;
-- `hold_out`: single hold-out validation run;
-- `cross_val`: cross-validation run.
-
-Outputs are written to the `out_dir` specified in each YAML configuration.
+The first command trains the generative model; the second trains structural-metric predictors. YAML files specify the architecture, dataset, optimization settings and output directory. The scripts support `grid`, `hold_out` and `cross_val` modes.
 
 ## Evaluation
 
-Run evaluation commands from the `model_test` directory.
-
-Decycling experiments:
+Run the evaluation scripts from `model_test/`:
 
 ```bash
 cd model_test
 python decycling_main.py
-```
-
-Dismantling experiments:
-
-```bash
-cd model_test
 python dismantle_main.py
 ```
 
-The experiment settings are configured near the bottom of each entry script. Common options include:
-
-- `dataset_type`: choose `synth`, `real_all`, or another available dataset suffix;
-- `method_list`: choose the evaluated methods or DiffGDM variants;
-- `data_cover`: whether to overwrite existing result files;
-- `Visual_presentation`: whether to only visualize existing results or recompute them;
-- `DiffDGM_infer_param`: guidance settings for DiffGDM inference.
-
-Example DiffGDM inference parameter block:
+Select the dataset, methods and inference settings in each script's configuration block. `Visual_presentation` selects visualization of saved results; `data_cover` controls replacement of existing results. Guidance settings are passed through `DiffDGM_infer_param`, for example:
 
 ```python
 DiffDGM_infer_param = {
@@ -160,17 +103,21 @@ DiffDGM_infer_param = {
 }
 ```
 
-Supported DiffGDM-style method names include:
+`DiffGDM` uses MVC guidance, `DiffGDM_base` disables rewrite, and `DiffGDM_ens` combines structural guides. The evaluation API supports `decycle` and `direct` postprocessing. Hyperparameter sensitivity is handled by `dismantle_model_params_analysis.py` and evaluates direct node removal followed by reinsertion.
 
-- `DiffGDM`: guided DiffGDM using the default MVC/cost guidance;
-- `DiffGDM_base`: unguided baseline;
-- `DiffGDM_LCC`, `DiffGDM_global_CC`, `DiffGDM_average_CC`, `DiffGDM_global_efficiency`, `DiffGDM_natural_connectivity`, `DiffGDM_density`: metric-specific guided variants, when the corresponding guidance model is available;
-- `CoreDiffGDM` and `CoreDiffGDM_base`: CoreDiffGDM variants used in the dismantling scripts.
+## Repository structure
 
+```text
+model_train/                Model training, losses and configurations
+model_test/                 Inference, baseline algorithms and evaluation
+  analysis_visi/            Original plotting and graph-analysis functions
+  toy_model_analysis.py     Figure 5 Toy-network experiment
+experiments_figure/         Manuscript figure entry points and local source data
+```
 
 ## Citation
 
-If you use this code or the DiffGDM model, please cite:
+If you use this implementation, please cite the associated manuscript:
 
 ```bibtex
 @misc{zhang2026bridging,
@@ -183,4 +130,4 @@ If you use this code or the DiffGDM model, please cite:
 
 ## License
 
-This project is released under the MIT License. See `LICENSE` for details.
+This project is released under the [MIT License](LICENSE). Third-party baseline implementations retain their respective licenses.
