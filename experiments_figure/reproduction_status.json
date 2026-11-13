@@ -70,7 +70,7 @@
     }
   },
   "remaining_source_items": {
-    "5": "Historical panel node sets; the recovered Toy entry has not been rerun"
+    "5": "Original figure and experiment code included; original script did not serialize panel node sets. Full rerun agreement with the historical panels remains unverified."
   },
   "toy_entry": {
     "path": "model_test/toy_model_analysis.py",
