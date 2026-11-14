@@ -1,6 +1,6 @@
 # Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling
 
-Implementation of **Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling** by Peng Zhang, Jun Fu and Rolf Findeisen.
+Implementation of **Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling**.
 
 DiffGDM learns a generative prior from feedback vertex sets and uses structural guidance to refine node selections for network dismantling. Generated scores support two downstream strategies: decycling followed by tree breaking and node reinsertion, or direct node removal followed by reinsertion. The ensemble variant combines structural guides and selects the smallest feasible dismantling set.
 
@@ -106,19 +106,6 @@ model_test/                 Inference, baseline algorithms and evaluation
   analysis_visi/            Original plotting and graph-analysis functions
   toy_model_analysis.py     Figure 5 Toy-network experiment
 experiments_figure/         Manuscript figure entry points and local source data
-```
-
-## Citation
-
-If you use this implementation, please cite the associated manuscript:
-
-```bibtex
-@misc{zhang2026bridging,
-  title = {Bridging the Decycling-Dismantling Gap: A Structure-Guided Approach for Network Dismantling},
-  author = {Zhang, Peng and Fu, Jun and Findeisen, Rolf},
-  year = {2026},
-  note = {Manuscript}
-}
 ```
 
 ## License
